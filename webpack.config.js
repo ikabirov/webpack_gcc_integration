@@ -9,6 +9,10 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				loader: 'export-modules-loader',
+				exclude: /node_modules/
+			},
+			{
 				test: /\.js/,
 				loader: 'babel-loader',
 				include: __dirname + '/src'
