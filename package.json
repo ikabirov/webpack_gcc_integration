@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --mode development",
-    "build": "webpack -p"
+    "build:gcc": "google-closure-compiler --entry_point build/src/index.js --flagfile=.closure-compiler",
+    "build:webpack": "webpack -p",
+    "build": "npm run build:webpack && npm run build:gcc"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +22,8 @@
     "style-loader": "^0.21.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "google-closure-compiler": "^20190729.0.0"
   }
 }

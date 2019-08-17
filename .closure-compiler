@@ -1,0 +1,6 @@
+--js build/src/**.js
+--compilation_level ADVANCED
+--warning_level VERBOSE
+--module_resolution NODE
+--process_common_js_modules
+--js_output_file build/bundle.js
