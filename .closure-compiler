@@ -1,7 +1,10 @@
 --entry_point generated/src/index.js
---js generated/src/**.js
+--js generated/src/**
 --compilation_level ADVANCED
 --warning_level VERBOSE
 --module_resolution NODE
+--language_out ECMASCRIPT_2015
+--externs externs/react.js
+--externs externs/reactdom.js
 --process_common_js_modules
 --js_output_file build/bundle.js
